@@ -56,7 +56,7 @@ class LLMIntegrator:
         """
         try:
             completion = openai.chat.completions.create(
-                model="gpt-4o",  # Using Mixtral model with larger context
+                model="gpt-4o-mini",  # Using Mixtral model with larger context
                 messages=[
                     {"role": "system", "content": "You are a helpful assistant that generates comprehensive and insightful technical articles."},
                     {"role": "user", "content": prompt}

@@ -1,9 +1,9 @@
 import argparse
 import os
-from file_parser import FileParser
-from readme_parser import ReadmeParser
-from llm_integrator import LLMIntegrator
-from pprint import pprint
+from .file_parser import FileParser
+from .readme_parser import ReadmeParser
+from .llm_integrator import LLMIntegrator
+
 
 def get_api_key():
     key_file = "key.txt"
