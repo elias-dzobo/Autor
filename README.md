@@ -14,25 +14,12 @@ This project automatically generates technical articles from a project's README 
 - Python 3.7+
 - Access to an LLM API (e.g., OpenAI's GPT-3)
 
-## Installation
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/technical-article-generator.git
-   cd technical-article-generator
-   ```
-
-2. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-
 ## Usage
 
 Run the script with the following command:
 
 ```
-python main.py /path/to/your/project [--output output_file.md]
+generate-article '/path/to/your/project'
 ```
 
 - `/path/to/your/project`: The path to the project directory you want to analyze
