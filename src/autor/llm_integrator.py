@@ -1,15 +1,14 @@
 import os
 import openai
-from dotenv import load_dotenv
 from typing import Dict, List
 
-load_dotenv()
+
 
 class LLMIntegrator:
     def __init__(self, api_key):
         self.api_key = api_key
         if not self.api_key:
-            raise ValueError("Groq API key not found. Please set the GROQ_API_KEY environment variable.")
+            raise ValueError("API key not found. Please enter your API Key.")
         openai.api_key = self.api_key
 
     def analyze_and_generate(self, files: Dict[str, str], readme_content: str) -> str:
