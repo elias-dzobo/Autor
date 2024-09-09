@@ -1,6 +1,8 @@
 [build-system]
-requires = ["setuptools>=45", "wheel"]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
 build-backend = "setuptools.build_meta"
 
-[metadata]
-version = 0.1.0  # Add your package version here
+[tool.setuptools_scm]
+write_to = "src/autor/_version.py"
+local_scheme = "no-local-version"
+version_scheme = "guess-next-dev"
